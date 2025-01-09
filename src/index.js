@@ -1,7 +1,7 @@
-import { menu } from "./menu";
 import "./style.css"
 
-import { appendFn } from "./home"
+import { appendHome } from "./home"
+import { appendMenu } from "./menu"
 
 //document selectors
 const content = document.querySelector("#content");
@@ -9,7 +9,11 @@ const homeBtn = document.querySelector(".homeBtn");
 const menuBtn = document.querySelector(".menuBtn");
 const aboutBtn = document.querySelector(".aboutBtn");
 
-homeBtn.addEventListener("click", appendFn)
+appendHome()
+
+homeBtn.addEventListener("click", appendHome)
+menuBtn.addEventListener("click", appendMenu)
+
 
 
 

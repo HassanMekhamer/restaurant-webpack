@@ -2,6 +2,7 @@ import "./style.css"
 
 import { appendHome } from "./home"
 import { appendMenu } from "./menu"
+import { appendAbout } from "./about"
 
 //document selectors
 const content = document.querySelector("#content");
@@ -13,6 +14,7 @@ appendHome()
 
 homeBtn.addEventListener("click", appendHome)
 menuBtn.addEventListener("click", appendMenu)
+aboutBtn.addEventListener("click", appendAbout)
 
 
 
